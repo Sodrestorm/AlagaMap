@@ -20,7 +20,7 @@
     </style>
 	
 	<meta charset="utf-8">
-	<title>Pontos de alagamento</title>
+	<title> AlagaMap - Pontos de alagamento</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		body {
@@ -28,9 +28,10 @@
 		}
 	</style>
 </head>
+
 <body>
 	<header>
-		<h1>Pontos de Alagamento</h1>
+		<h1>AlagaMap - Pontos de Alagamento</h1>
 	</header>
 
 	<main>
@@ -54,13 +55,21 @@
 				<li>Facilitar o planejamento e a execução de ações preventivas e de contingência.</li>
 			</ul>
 		</section>
+
+		<section>
+			<h2>Indicar ponto de alagamento</h2>
+			<form action="submit.php" method="POST">
+				<label for="endereco">Endereço:</label><br>
+				<input type="text" id="endereco" name="endereco" required><br>
+				<label for="descricao">Descrição:</label><br>
+				<textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
 	</main>
 
 	<footer>
-		<p>
-
-		Desenvolvido por Filipi Silva Sodré, Aluno Eng. Civil. USJT - Campus Paulista, RA - 823119261
-		(Os pontos de alagamento indicados no mapa, são apenas simulações)</p>
+		<p>Desenvolvido por Filipi Silva Sodré, Aluno Eng. Civil. USJT - Campus Paulista, RA - 823119261 (Os pontos de alagamento indicados no mapa, são apenas simulações)</p>
 	</footer>
 </body>
 </html>
